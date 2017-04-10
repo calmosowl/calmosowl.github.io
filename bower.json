@@ -1,9 +1,9 @@
 {
-  "name": "smileexpo",
-  "description": "gulp smileexpo project",
+  "name": "cv",
+  "description": "cv",
   "main": "",
   "authors": [
-    "LucasKane"
+    "calmos"
   ],
   "license": "MIT",
   "ignore": [

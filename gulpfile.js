@@ -19,12 +19,12 @@ var gulp = require('gulp'),
 //Прописываем объект содержащий все необходимые пути
 var path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
-        html: 'web/',
-        js: 'web/js/',
-        css: 'web/css/',
-        img: 'web/images/',
-        fonts: 'web/fonts/',
-        libs: 'web/libs/'
+        html: 'doc/',
+        js: 'doc/js/',
+        css: 'doc/css/',
+        img: 'doc/images/',
+        fonts: 'doc/fonts/',
+        // libs: 'doc/libs/'
     },
     src: { //Пути откуда брать исходники
         html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
@@ -33,7 +33,7 @@ var path = {
         media: 'src/sass/media.scss',
         img: 'src/images/**/*.*', //Синтаксис images/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
         fonts: 'src/fonts/**/*.*',
-        libs: './bower_components/'
+        // libs: './bower_components/'
     },
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
         html: 'src/**/*.html',
@@ -42,13 +42,13 @@ var path = {
         img: 'src/images/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
-    clean: './web'
+    clean: './doc'
 };
 
 //Переменная с настройками dev сервера
 var config = {
     server: {
-        baseDir: "./web"
+        baseDir: "./doc"
     },
     tunnel: false,
     host: 'localhost.casino-market.com',
@@ -178,7 +178,7 @@ gulp.task('filter', function() {
 		.pipe(gulp.dest('dist'));
  
 	// Вываливаем в билд 
-	jsFilter.restore.pipe(gulp.dest('web/libs/'));
+	// jsFilter.restore.pipe(gulp.dest('doc/libs/'));
  
 	return stream;
 });
@@ -193,4 +193,4 @@ gulp.task('build', [
 ]);
 
 //Дефолтный таск старта
-gulp.task('default', ['bower', 'build', 'filter', 'webserver', 'watch']);
+gulp.task('default', ['build', 'filter', 'webserver', 'watch']);
