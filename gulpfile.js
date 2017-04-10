@@ -19,12 +19,12 @@ var gulp = require('gulp'),
 //Прописываем объект содержащий все необходимые пути
 var path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
-        html: 'doc/',
-        js: 'doc/js/',
-        css: 'doc/css/',
-        img: 'doc/images/',
-        fonts: 'doc/fonts/',
-        // libs: 'doc/libs/'
+        html: 'docs/',
+        js: 'docs/js/',
+        css: 'docs/css/',
+        img: 'docs/images/',
+        fonts: 'docs/fonts/',
+        // libs: 'docs/libs/'
     },
     src: { //Пути откуда брать исходники
         html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
@@ -42,13 +42,13 @@ var path = {
         img: 'src/images/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
-    clean: './doc'
+    clean: './docs'
 };
 
 //Переменная с настройками dev сервера
 var config = {
     server: {
-        baseDir: "./doc"
+        baseDir: "./docs"
     },
     tunnel: false,
     host: 'localhost.casino-market.com',
@@ -178,7 +178,7 @@ gulp.task('filter', function() {
 		.pipe(gulp.dest('dist'));
  
 	// Вываливаем в билд 
-	// jsFilter.restore.pipe(gulp.dest('doc/libs/'));
+	// jsFilter.restore.pipe(gulp.dest('docs/libs/'));
  
 	return stream;
 });
