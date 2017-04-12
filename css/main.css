@@ -56,10 +56,6 @@
   margin-bottom: 0.5em;
 }
 
-.content h1:not(:first-child) {
-  margin-top: 1em;
-}
-
 .content h2 {
   font-size: 1.75em;
   margin-bottom: 0.5714em;
@@ -276,7 +272,7 @@
 }
 
 .title {
-  color: #363636;
+  color: #b58900;
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.125;
@@ -319,10 +315,7 @@
 }
 
 .subtitle {
-  color: #4a4a4a;
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.25;
+  color: inherit;
 }
 
 .subtitle strong {
@@ -913,6 +906,9 @@ th {
 @media screen and (max-width: 768px) {
   .is-hidden-mobile {
     display: none !important;
+  }
+  .has-text-right {
+  text-align: left;
   }
 }
 
@@ -1958,9 +1954,14 @@ body {
 }
 
 body > section {
-  padding: 150px 0;
+  padding: 150px 20px;
 }
 
 .is-base {
   color: #657b83;
 }
+
+.content .columns {
+  flex-direction: column;
+}
+
