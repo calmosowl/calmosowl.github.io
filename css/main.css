@@ -110,7 +110,7 @@ body {
 
 mark {
   background-color: #eee8d5;
-  color: #cb4b16;
+  color: inherit;
 }
 
 .content {
