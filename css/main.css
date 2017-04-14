@@ -110,6 +110,7 @@ body {
 
 mark {
   background-color: #eee8d5;
+  color: #cb4b16;
 }
 
 .content {
@@ -1945,6 +1946,12 @@ mark {
 
 body > section {
   padding: 150px 20px;
+}
+
+@media screen and (max-width: 460px) {
+  body > section {
+    padding: 50px 20px;
+  }
 }
 
 .is-base {
