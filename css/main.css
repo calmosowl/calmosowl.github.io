@@ -113,6 +113,14 @@ mark {
   color: inherit;
 }
 
+a {
+  color: #b58900;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: none 86ms ease-out;
+  transition: none 86ms ease-out;
+}
+
 .content {
   color: #657b83;
 }
@@ -1966,4 +1974,17 @@ body > section {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+.lang-switcher ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  color: #93a1a1;
+}
+
+.lang-switcher ul li:first-child:after {
+  content: "/";
 }
