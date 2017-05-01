@@ -1974,17 +1974,22 @@ body > section {
   position: absolute;
   top: 20px;
   right: 20px;
+  color: #93a1a1;
 }
 
+.lang-switcher,
 .lang-switcher ul {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  color: #93a1a1;
 }
 
-.lang-switcher ul li:first-child:after {
+.lang-switcher ul li:not(:last-child):after {
   content: "/";
+}
+
+.lang-switcher > * {
+  margin-left: 10px;
 }
