@@ -187,6 +187,10 @@ a {
 .content h5 {
   font-size: 1.125em;
   margin-bottom: 0.8888em;
+  text-emphasis-style: '⸻';
+  text-emphasis-color: #657b83;
+  text-emphasis-position: under left;
+  text-decoration: none;
 }
 
 .content h6 {
@@ -208,10 +212,11 @@ a {
 }
 
 .content ul {
-  list-style: disc outside;
+  list-style-type: '⧉ ';
   margin-left: 2em;
   margin-right: 2em;
   margin-top: 1em;
+  
 }
 
 .content ul ul {
