@@ -121,6 +121,10 @@ a {
   transition: none 86ms ease-out;
 }
 
+.is-monospace {
+  font-family: monospace;
+}
+
 .content {
   color: #657b83;
 }
