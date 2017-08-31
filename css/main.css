@@ -212,7 +212,7 @@ a {
 }
 
 .content ul {
-  list-style-type: '⧉ ';
+  list-style-type: disc;
   margin-left: 2em;
   margin-right: 2em;
   margin-top: 1em;
@@ -477,6 +477,9 @@ a {
     margin: 0 20px;
     max-width: none;
     width: auto;
+  }
+  .content ul {
+    list-style-type: '⧉ ';
   }
 }
 
