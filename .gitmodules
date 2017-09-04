@@ -1,0 +1,3 @@
+[submodule "math"]
+      path = projects/math
+      url = git://github.com/calmosowl/math.git
