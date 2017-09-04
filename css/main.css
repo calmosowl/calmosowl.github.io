@@ -116,6 +116,7 @@ mark {
 a {
   color: #b58900;
   cursor: pointer;
+  display: block;
   text-decoration: none;
   -webkit-transition: none 86ms ease-out;
   transition: none 86ms ease-out;
@@ -457,7 +458,8 @@ a {
 }
 
 .subtitle.is-6 {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-style: oblique;
 }
 
 .block:not(:last-child) {
