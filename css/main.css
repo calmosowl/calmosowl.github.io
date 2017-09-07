@@ -1954,6 +1954,28 @@ a:hover,a:focus,a:active {
           align-items: center;
 }
 
+.projects-wrapper {
+  align-items: flex-end;
+}
+
+.projects-wrapper article.column {
+  max-width: 300px;
+}
+
+.projects summary {
+  font-size: 0.9rem;
+  font-style: oblique;
+}
+
+.projects img {
+  border: 1px solid #657b83;
+}
+
+details {
+  outline: 0px none;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 769px) {
   .columns:not(.is-desktop) {
     display: -webkit-box;
@@ -1984,6 +2006,7 @@ body > section {
 .is-base {
   color: #657b83;
 }
+
 
 .content .columns {
   flex-direction: column;
