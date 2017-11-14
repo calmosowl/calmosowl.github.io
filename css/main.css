@@ -193,10 +193,9 @@ a:hover,a:focus,a:active {
 .content h5 {
   font-size: 1.125em;
   margin-bottom: 0.8888em;
-  text-emphasis-style: '⸻';
-  text-emphasis-color: #657b83;
-  text-emphasis-position: under left;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-skip: ink;
+  font-family: Serif;
 }
 
 .content h6 {
