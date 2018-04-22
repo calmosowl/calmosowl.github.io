@@ -39,3 +39,5 @@ jspm_packages
 # my
 
 *.sublime*
+.idea/
+package-lock.json

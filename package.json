@@ -1,0 +1,30 @@
+{
+  "name": "calmosowl.github.io",
+  "version": "2.0.0",
+  "description": "cv page",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calmosowl/calmosowl.github.io.git"
+  },
+  "author": "calmos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calmosowl/calmosowl.github.io/issues"
+  },
+  "homepage": "https://github.com/calmosowl/calmosowl.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "autoprefixer": "^6.0.0",
+    "gulp": "^3.9.1",
+    "gulp-markdown": "^2.0.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-watch": "^4.3.5"
+  }
+}
