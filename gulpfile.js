@@ -12,7 +12,7 @@ const path = {
   build: {
     html: './',
     js: './js/',
-    css: './css/',
+    css: 'css/',
     img: './images/',
     fonts: './fonts/'
   },
@@ -67,22 +67,17 @@ gulp.task('style', function () {
   .pipe(reload({ stream: true }));
 });
 
+gulp.task('webserver', function () {
+  browserSync(config);
+});
+
 gulp.task('watch', function () {
   watch([path.watch.html], function (event, cb) {
-    gulp.start('html:build'); 
+    gulp.start('html'); 
   });
   watch([path.watch.style], function (event, cb) {
-    gulp.start('style:build'); 
-  });
-  watch([path.watch.js], function (event, cb) {
-    gulp.start('js:build'); 
-  });
-  watch([path.watch.img], function (event, cb) {
-    gulp.start('image:build'); 
-  });
-  watch([path.watch.fonts], function (event, cb) {
-    gulp.start('fonts:build'); 
+    gulp.start('style'); 
   });
 });
 
-gulp.task('default', ['build', 'webserver', 'watch']);
+gulp.task('default', ['webserver', 'watch']);
