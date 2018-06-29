@@ -1,16 +1,17 @@
+:root {
+  --font-size: 16px;
+  --line-height: 21px;
+}
+
 html {
-  font-size: 16px;
-  line-height: 21px;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
 }
 
 body, .article {
   font-family: sans-serif;
   font-size: 1rem;
   line-height: 1.3125rem;
-}
-
-body {
-  padding: 10rem;
 }
 
 h1, .h1 {
@@ -84,28 +85,27 @@ sub {
 
 body {
   display: grid;
-  grid-template-areas: ".               header" "aside-primary     main" "aside-secondary   main";
-  grid-template-columns: 1fr 1.618fr;
-  grid-column-gap: 2ch;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 300px);
+  grid-column-gap: var(--line-height);
+  justify-content: center;
+  margin: var(--line-height);
   font-family: 'helvetica neue', helvetica, arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-aside.aside-primary {
-  grid-area: aside-primary;
-}
-
-aside.aside-secondary {
-  grid-area: aside-secondary;
+aside {
+  grid-column: 1 / 2;
 }
 
 main {
-  grid-area: main;
+  grid-column: 2 / 4;
 }
 
 .lang-switcher {
-  grid-area: header;
+  display: none;
+  /* TODO: return visibility  */
 }
 
 img {
