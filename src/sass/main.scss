@@ -111,6 +111,14 @@ mark {
   font-family: monospace;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
+li {
+  font-weight: 300;
+}
+
 body {
   display: grid;
   grid-auto-flow: column;
@@ -121,7 +129,7 @@ body {
   font-family: 'HelveticaNeueCyr', helvetica, arial, sans-serif;
   color: #323d47;
   text-rendering: optimizeLegibility;
-  font-weight: 400;
+  font-weight: 500;
   background-color: #f5f5f5;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
