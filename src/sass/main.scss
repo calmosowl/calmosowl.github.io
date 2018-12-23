@@ -174,7 +174,7 @@ section > h3 {
 }
 
 .experience {
-  grid-column: 1 / 6;
+  grid-column: 1 / 5;
   display: grid;
   grid-gap: var(--line-height);
   grid-template-columns: repeat(4, 1fr);
@@ -182,14 +182,15 @@ section > h3 {
 
 .experience .date {
   grid-column: 1 / 2;
+  justify-self: end;
 }
 
 .experience h3 {
-  grid-column: 2 / 3;
+  grid-column: 2 / 4;
 }
 
 .experience p, .experience ul, .experience h5 {
-  grid-column: 2 / 5;
+  grid-column: 3 / 5;
   margin-bottom: 0;
 }
 
