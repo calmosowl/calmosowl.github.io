@@ -15,19 +15,19 @@ const path = {
     js: './js/',
     css: 'css/',
     img: './images/',
-    markdown: './html/',
+    markdown: 'src/html/',
     fonts: './fonts/'
   },
   src: {
     markdown: 'src/markdown/*.md',
-    html: './html/*.html',
+    html: 'src/html/*.html',
     style: 'src/sass/main.scss',
     img: 'src/images/**/*.*',
     fonts: 'src/fonts/**/*.*'
   },
   watch: {
     markdown: 'src/markdown/*.md',
-    html: './html/*.html',
+    html: 'src/html/*.html',
     js: 'src/js/**/*.js',
     style: 'src/sass/**/*.scss',
     img: 'src/images/**/*.*',
@@ -51,7 +51,7 @@ gulp.src(path.src.markdown)
   .pipe(rename(function (path) {
     path.extname = ".html";
   }))
-  .pipe(gulp.dest('html'))
+  .pipe(gulp.dest(path.build.markdown))
 );
 
 gulp.task('html', function () {
@@ -81,9 +81,9 @@ gulp.task('watch', function () {
   });
   // Необходимо перенести склейку html частей в один файл в папку src, а
   // результат отдавать в ./index.html
-  // watch([path.watch.html], function (event, cb) {
-  //   gulp.start('html');
-  // });
+  watch([path.watch.html], function (event, cb) {
+    gulp.start('html');
+  });
   watch([path.watch.style], function (event, cb) {
     gulp.start('style'); 
   });

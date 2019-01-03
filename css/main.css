@@ -173,7 +173,7 @@ section > h3 {
 }
 
 .education {
-  grid-column: 5 / 7;
+  grid-column: 5 / -1;
 }
 
 .experience {
@@ -185,16 +185,23 @@ section > h3 {
 
 .experience .date {
   grid-column: 1 / 2;
+  font-size: smaller;
+  line-height: 0;
+  display: inline;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.5em;
   justify-self: end;
+  align-self: auto;
 }
 
 .experience h3 {
-  grid-column: 2 / 4;
+  grid-column: 2 / -1;
 }
 
-.experience p, .experience ul, .experience h5 {
-  grid-column: 3 / 5;
+.experience :not(.date) {
   margin-bottom: 0;
+  grid-column: 3 / -1;
 }
 
 .experience h5:not(:first-of-type) {

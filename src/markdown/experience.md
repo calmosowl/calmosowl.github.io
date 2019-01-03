@@ -2,25 +2,31 @@
 
 ##### Enestech
 
+<p class="date">09.2017 – Present</p>
+
+Frontend developer
+
 ##### Smile Expo
 
-<p class="date">09.2016 – Present</p>
+<p class="date">09.2016 – 09.2017</p>
 
-Applied Programmer
+<div>Full-stack developer
 
 *   front-end: Developing web components, widgets(js, html, css). Write html web pages. Optimize website performance
 *   back-end: Build a site using Yii
+</div>
 
 ##### Ermilove marketing
 
 <p class="date">09.2015 – 09.2016</p>
 
-Frontend developer
+<div>Frontend developer
 
 *   Converted Photoshop layouts to web pages using HTML, CSS, and JavaScript
 *   Provide assistance to the beck-end developers in troubleshooting and coding
 *   Development of web interfaces (corporate sites, online stores, landing-page)
 *   Updating existing solutions, fixing errors
+</div>
 
 ##### JSC 'BANK 'FINANCE AND CREDIT'
 
