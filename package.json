@@ -1,11 +1,8 @@
 {
   "name": "calmosowl.github.io",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "cv page",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,18 +10,18 @@
     "type": "git",
     "url": "git+https://github.com/calmosowl/calmosowl.github.io.git"
   },
-  "author": "calmos",
+  "author": "Artem Kyselov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/calmosowl/calmosowl.github.io/issues"
   },
   "homepage": "https://github.com/calmosowl/calmosowl.github.io#readme",
   "devDependencies": {
-    "browser-sync": "^2.12.5",
-    "autoprefixer": "^6.0.0",
-    "gulp": "^3.9.1",
-    "gulp-markdown": "^2.0.1",
-    "gulp-rigger": "^0.5.8",
-    "gulp-watch": "^4.3.5"
+    "browser-sync": "^2.27.10",
+    "gulp": "4.0.0",
+    "gulp-sass": "3.2.1",
+    "gulp-stylelint": "13.0.0",
+    "stylelint-order": "3.1.1",
+    "stylelint": "14.0.0"
   }
 }
