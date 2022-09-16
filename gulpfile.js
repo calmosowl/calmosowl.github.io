@@ -4,9 +4,6 @@ const stylelint = require('gulp-stylelint');
 const browserSync = require('browser-sync').create();
 
 const paths = {
-  html: {
-    src: './*.html'
-  },
   styles: {
     src: 'src/**/*.scss',
     dest: 'css',
@@ -30,19 +27,12 @@ task('sass', () => {
     .pipe(browserSync.stream());
 });
 
-task('html', () => {
-  return src(paths.html.src)
-    .pipe(dest('./'))
-    .pipe(browserSync.stream());
-});
-
-task('serve', series('html', 'sass', () => {
+task('serve', series('sass', () => {
   browserSync.init({
     server: "./"
   });
 
   watch(paths.styles.src, series('sass'));
-  watch(paths.html.src, series('html')).on('change', browserSync.reload);
 }));
 
 task('default', series('serve'));
