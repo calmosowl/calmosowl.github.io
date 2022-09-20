@@ -1,11 +1,11 @@
 .o-main-layout {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  padding: 32px;
+  gap: 4rem;
+  padding: 4rem;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 96rem) {
     display: grid;
-    grid-template-columns: 300px minmax(300px, 75ch);
+    grid-template-columns: 37.5rem minmax(37.5rem, 75ch);
   }
 }
