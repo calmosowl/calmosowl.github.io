@@ -251,6 +251,10 @@ summary {
   display: list-item;
 }
 
+:root {
+  --g-main-layout-padding: 4rem;
+}
+
 html {
   font-size: 8px;
 }
@@ -259,6 +263,7 @@ body {
   font-family: sans-serif;
   font-size: 2rem;
   line-height: 2.75rem;
+  position: relative;
 }
 
 li + li {
@@ -299,7 +304,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 4rem;
+  padding: var(--g-main-layout-padding);
 }
 
 @media screen and (min-width: 768px) {
@@ -320,6 +325,14 @@ p {
   padding: 0 1rem;
   border-radius: 2px;
   background: gainsboro;
+}
+
+.language-switcher {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  top: 2rem;
+  right: var(--g-main-layout-padding);
 }
 
 .u-text-right {
