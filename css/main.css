@@ -266,6 +266,10 @@ body {
   position: relative;
 }
 
+main > section {
+  padding-bottom: 4rem;
+}
+
 li + li {
   margin-top: 1rem;
 }
